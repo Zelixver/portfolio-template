@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Interactive Character</title>
+    <link rel="stylesheet" href="styles3d.css">
+</head>
+<body>
+    <div class="container">
+        <h1>3D Interactive Character</h1>
+        <p class="subtitle">Move your mouse to interact • Use keyboard to control</p>
+        
+        <div class="canvas-container">
+            <canvas id="characterCanvas"></canvas>
+            <div class="controls-info">
+                <div class="control-item">
+                    <span class="key">MOUSE</span>
+                    <span class="action">Move to rotate</span>
+                </div>
+                <div class="control-item">
+                    <span class="key">W / A / S / D</span>
+                    <span class="action">Move character</span>
+                </div>
+                <div class="control-item">
+                    <span class="key">SPACE</span>
+                    <span class="action">Jump</span>
+                </div>
+                <div class="control-item">
+                    <span class="key">MOUSE WHEEL</span>
+                    <span class="action">Zoom in/out</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="info-panel">
+            <h2>Character Stats</h2>
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-label">Position:</span>
+                    <span class="stat-value" id="positionX">X: 0.00</span>
+                    <span class="stat-value" id="positionY">Y: 0.00</span>
+                    <span class="stat-value" id="positionZ">Z: 0.00</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Rotation:</span>
+                    <span class="stat-value" id="rotationX">X: 0.00°</span>
+                    <span class="stat-value" id="rotationY">Y: 0.00°</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Animation:</span>
+                    <span class="stat-value" id="animationState">Idle</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">FPS:</span>
+                    <span class="stat-value" id="fpsCounter">60</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="features-section">
+            <h2>Features</h2>
+            <ul>
+                <li>✨ 3D Rendered Character with smooth animations</li>
+                <li>🎮 Interactive controls with keyboard and mouse</li>
+                <li>👁️ Dynamic camera following system</li>
+                <li>🌍 Full 3D space navigation</li>
+                <li>⚡ Real-time performance monitoring (FPS)</li>
+                <li>🎨 Colorful character model with multiple body parts</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="three.min.js"></script>
+    <script src="script3d.js"></script>
+</body>
+</html>
